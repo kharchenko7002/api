@@ -1,21 +1,25 @@
 import React, { useState } from "react";
 import Bilder from "./Bilder";
-import Vaer from "./Vaer"; 
-function App() {
-  const [valg, setValg] = useState(null); // null | 'bilder' | 'vaer'
+import Vaer from "./Vaer";
+import "./App.css";
 
-  if (valg === "bilder") return <Bilder />;
-  if (valg === "vaer") return <Vaer />;
+function App() {
+  const [valg, setValg] = useState(null);
+
+  if (valg === "bilder") return <Bilder onTilbake={() => setValg(null)} />;
+  if (valg === "vaer") return <Vaer onTilbake={() => setValg(null)} />;
 
   return (
-    <div style={{ textAlign: "center", padding: "2rem" }}>
-      <h1>Velg funksjon</h1>
-      <button onClick={() => setValg("bilder")} style={{ margin: "1rem" }}>
-        Se bilder fra NASA
-      </button>
-      <button onClick={() => setValg("vaer")} style={{ margin: "1rem" }}>
-        Sjekk været
-      </button>
+    <div className="app-container">
+      <h1 className="app-title">Velg funksjon</h1>
+      <div className="button-group">
+        <button className="menu-button blue" onClick={() => setValg("bilder")}>
+          Se bilder fra NASA
+        </button>
+        <button className="menu-button green" onClick={() => setValg("vaer")}>
+          Sjekk været
+        </button>
+      </div>
     </div>
   );
 }

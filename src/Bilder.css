@@ -1,0 +1,67 @@
+.bilder-container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .bilder-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bilder-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bilder-controls input {
+    padding: 0.5rem;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .bilder-controls button {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .bilder-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .bilder-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+  }
+  
+  .bilder-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+  }
+
+  .tilbake-button {
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #7f8c8d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
