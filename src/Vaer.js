@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const API_KEY = "59f5b8da94793c89caed7535088b1f52 "; 
+const API_KEY = "59f5b8da94793c89caed7535088b1f52"; 
 
 const Vaer = () => {
   const [by, setBy] = useState("");
