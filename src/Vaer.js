@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Vaer.css";
 
-const API_KEY = "ВСТАВЬ_СВОЙ_API_КЛЮЧ";
+const API_KEY = "59f5b8da94793c89caed7535088b1f52";
 
 const Vaer = ({ onTilbake }) => {
   const [by, setBy] = useState("");
